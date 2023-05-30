@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>期末</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link href="./styles.css" rel="stylesheet" />
+    <link href="b1.css" rel="stylesheet" />
+    <link href="b2.css" rel="stylesheet" />
+    <link href="b3.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <button onclick="toggleMenu()" class="burger"></button>
+      <button class="button" class="material-symbols-outlined" onclick="loadPageIntoFrame6()">Home</button>
+      <div class="dropdowns">
+        <div class="dropdown">
+            <button class="dropdown" class="material-symbols-outlined" onclick="loadPageIntoFrame1()">
+              互動影片
+            </button>
+        </div>
+        <div class="dropdown">
+          <button class="button">
+            h5p互動機制
+            <img src="chevron.svg" />
+          </button>
+          <div class="dropdown-menu">
+            <button  class="material-symbols-outlined" onclick="loadPageIntoFrame2()">圖像排序</button>
+            <button  class="material-symbols-outlined" onclick="loadPageIntoFrame3()">配對遊戲</button>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button>
+            課程作品
+            <img src="chevron.svg" />
+          </button>
+          <div class="dropdown-menu">
+            <button  class="material-symbols-outlined" onclick="loadPageIntoFrame4()">作品一</button>
+            <button  class="material-symbols-outlined" onclick="loadPageIntoFrame5()">作品二</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <script>
+      const toggleMenu = () => document.body.classList.toggle("open");
+    </script>
+    <div class="main">
+      <iframe name="z1" width="100%" height="100%" frameBorder="0"></iframe>
+      </div>
+      <script type="text/javascript">
+        function loadPageIntoFrame1() {
+            var frame = window.frames["z1"];  // 获取名为 myFrame 的 iframe
+            var url = "https://wsinyun.github.io/20230529_h5p_3/";  // 要加载的网页的 URL
+            frame.location.href = url;  // 在 iframe 中加载网页
+        }
+        function loadPageIntoFrame2() {
+            var frame = window.frames["z1"];  // 获取名为 myFrame 的 iframe
+            var url = "https://wsinyun.github.io/20230529_h5p_2/";  // 要加载的网页的 URL
+            frame.location.href = url;  // 在 iframe 中加载网页
+        }
+        function loadPageIntoFrame3() {
+            var frame = window.frames["z1"];  // 获取名为 myFrame 的 iframe
+            var url = "https://wsinyun.github.io/20230529_h5p_1/";  // 要加载的网页的 URL
+            frame.location.href = url;  // 在 iframe 中加载网页
+        }
+        function loadPageIntoFrame4() {
+            var frame = window.frames["z1"];  // 获取名为 myFrame 的 iframe
+            var url = "https://wsinyun.github.io/20230215/";  // 要加载的网页的 URL
+            frame.location.href = url;  // 在 iframe 中加载网页
+        }
+        function loadPageIntoFrame5() {
+            var frame = window.frames["z1"];  // 获取名为 myFrame 的 iframe
+            var url = "https://wsinyun.github.io/23030329/";  // 要加载的网页的 URL
+            frame.location.href = url;  // 在 iframe 中加载网页
+        }
+        function loadPageIntoFrame6() {
+            var frame = window.frames["z1"];  // 获取名为 myFrame 的 iframe
+            var url = "https://wsinyun.github.io/6/";  // 要加载的网页的 URL
+            frame.location.href = url;  // 在 iframe 中加载网页
+        }
+      </script>
+  </body>
+</html>
